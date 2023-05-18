@@ -6,8 +6,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <meta name="color-scheme" content="light dark">
-        <meta name="supported-color-schemes" content="light dark"> -->
+        <meta name="color-scheme" content="light dark">
+        <meta name="supported-color-schemes" content="light dark">
         <title>Email Project</title>
         <style type="text/css">
             @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
@@ -26,6 +26,11 @@
 
             img {
                 border: 0;
+            }
+
+            a {
+                color: #E8FBFA;
+                text-decoration: none;
             }
 
             @media only screen and (max-width: 599.98px) {
@@ -65,6 +70,7 @@
                     padding-top: 40px !important;
                     padding-bottom: 60px !important;
                 }
+
             }
 
             @media only screen and (max-width: 399.98px) {
@@ -81,7 +87,24 @@
             }
 
             /* DARK MODE CONFIGS */
-            @media (prefers-color-scheme: dark) {}
+            :root {
+                color-scheme: light dark;
+                supported-color-schemes: light dark;
+            }
+
+            @media (prefers-color-scheme: dark) {
+
+                body,
+                center,
+                table {
+                    background-color: #2D2D2D !important;
+                    color: #FFF !important;
+                }
+
+                .darkmode-transparent {
+                    background-color: transparent !important;
+                }
+            }
         </style>
         <!--[if (gte mso 9)|(IE)]>
             <style type='text/css'>
@@ -123,12 +146,13 @@
                     <!-- SOCIAL ICONS -->
                     <tr>
                         <td style="padding: 0;">
-                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <table width="100%" style="border-spacing: 0; background-color: #EAF6FB;"
+                                role="presentation">
                                 <tr>
                                     <td height="3" style="background-color: #21C6B8;"></td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #EBF5FA; text-align: center; padding: 10px 0 8px 0;">
+                                    <td style="text-align: center; padding: 10px 0 8px 0;">
                                         <a href="https://www.facebook.com" target="_blank"><img
                                                 src="https://i.ibb.co/bPLzh61/circle-facebook.png" alt="Facebook"
                                                 title="Facebook" width="32" height="32" border="0"></a>
@@ -158,9 +182,10 @@
                     <!-- LOGO -->
                     <tr>
                         <td style="padding: 0;">
-                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <table width="100%" style="border-spacing: 0; background-color: #EAF6FB;"
+                                role="presentation">
                                 <tr>
-                                    <td style="background-color: #FAFDFE; padding: 20px 0; text-align: center;">
+                                    <td style="padding: 20px 0; text-align: center;">
                                         <a href="https://www.example.com"><img
                                                 src="https://i.ibb.co/rx31TX7/html-email.png" alt="Logo" title="Logo"
                                                 width="280" border="0"></a>
@@ -188,7 +213,7 @@
                                             role="presentation">
                                             <tr>
                                                 <td align="center">
-                                                    <table class="darkmode-tranparent" role="presentation">
+                                                    <table class="darkmode-transparent" role="presentation">
                                                         <tr>
 
                                                             <!--[if (gte mso 9)|(IE)]>
@@ -271,7 +296,7 @@
                                                         <tr>
                                                             <td style="padding: 10px 10px 20px 10px;">
                                                                 <p
-                                                                    style="font-size: 17px; font-weight: bold; line-height: 20px;">
+                                                                    style="font-size: 17px; font-weight: bold; line-height: 25px;">
                                                                     Build
                                                                     Responsive Emails</p>
                                                                 <p style="font-size: 15px; line-height: 20px;">
@@ -324,7 +349,7 @@
                                                         <tr>
                                                             <td style="padding: 10px 10px 20px 10px;">
                                                                 <p
-                                                                    style="font-size: 17px; font-weight: bold; line-height: 20px;">
+                                                                    style="font-size: 17px; font-weight: bold; line-height: 25px;">
                                                                     Create
                                                                     Custom Designs</p>
                                                                 <p style="font-size: 15px; line-height: 20px;">
@@ -389,7 +414,7 @@
                                             <tr>
                                                 <td class="padding first"
                                                     style="padding: 15px 20px; background-color: #1E5D7B;">
-                                                    <table class="content"
+                                                    <table class="content darkmode-transparent"
                                                         style="border-spacing: 0; text-align: center;"
                                                         role="presentation">
                                                         <tr>
